@@ -5,7 +5,7 @@ public class Camiseta {
         private String color;
         private String tamano;
         private String img;
-        private Double precio;
+        private String precio;
         private String descripcion;
 
     /**
@@ -18,7 +18,7 @@ public class Camiseta {
      * @param precio
      * @param descripcion
      */
-    public Camiseta(String id, String color, String tamano, String img, Double precio, String descripcion) {
+    public Camiseta(String id, String color, String tamano, String img, String precio, String descripcion) {
         this.id = id;
         this.color = color;
         this.tamano = tamano;
@@ -95,7 +95,7 @@ public class Camiseta {
      * getter para precio
      * @author David Huertas
      */
-    public Double getPrecio() {
+    public String getPrecio() {
             return precio;
         }
 
@@ -103,7 +103,7 @@ public class Camiseta {
      * setter para precio
      * @author David Huertas
      */
-    public void setPrecio(Double precio) {
+    public void setPrecio(String precio) {
             this.precio = precio;
         }
 
@@ -122,6 +122,18 @@ public class Camiseta {
     public void setDescripcion(String descripcion) {
             this.descripcion = descripcion;
         }
+
+    @Override
+    public String toString() {
+        return "Camiseta{" +
+                "id='" + id + '\'' +
+                ", color='" + color + '\'' +
+                ", tamano='" + tamano + '\'' +
+                ", img='" + img + '\'' +
+                ", precio='" + precio + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                '}';
+    }
 
     @Override
     public boolean equals(Object o) {
