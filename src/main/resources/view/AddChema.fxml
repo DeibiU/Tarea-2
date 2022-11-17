@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="368.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RegistrarCamisetaController">
+   <children>
+      <Label layoutX="98.0" layoutY="34.0" text="ID">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtIdCamiseta" layoutX="33.0" layoutY="69.0" />
+      <Label layoutX="364.0" layoutY="34.0" text="Color">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtColor" layoutX="311.0" layoutY="69.0" />
+      <Label layoutX="76.0" layoutY="128.0" text="Tamaño">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="369.0" layoutY="128.0" text="IMG">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTamano" layoutX="33.0" layoutY="163.0" />
+      <Label layoutX="83.0" layoutY="225.0" text="Precio">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="225.0" text="Descripcion">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDescripcion" layoutX="311.0" layoutY="263.0" />
+      <Button fx:id="btnCrearCamiseta" layoutX="218.0" layoutY="313.0" mnemonicParsing="false" onAction="#btnCrearCamiseta" text="Guardar">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtPrecio" layoutX="33.0" layoutY="263.0" />
+      <TextField fx:id="txtImg" layoutX="312.0" layoutY="163.0" promptText="Ex: [C:\Users\HanSolo\...]" />
+   </children>
+</AnchorPane>

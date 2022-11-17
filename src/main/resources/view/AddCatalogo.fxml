@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RegistrarCatalogoController">
+   <children>
+      <Label layoutX="211.0" layoutY="14.0" text="Nombre">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombre" layoutX="164.0" layoutY="45.0" />
+      <Label layoutX="178.0" layoutY="93.0" text="Fecha de Creacion">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFechaDeCreacion" layoutX="164.0" layoutY="180.0" />
+      <Button fx:id="btnCrearCatalogo" layoutX="209.0" layoutY="237.0" mnemonicParsing="false" onAction="#btnCrearCatalogo" text="Guardar" />
+      <Label layoutX="90.0" layoutY="121.0" prefHeight="46.0" prefWidth="297.0" text="*Este estará compuesto por el nombre del mes y el año de la fecha de creación del catálogoy las camisetas que lo componen" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
