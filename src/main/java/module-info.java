@@ -5,6 +5,6 @@ module com.example.tarea2 {
     requires org.controlsfx.controls;
     requires com.almasb.fxgl.all;
 
-    opens com.example.tarea2 to javafx.fxml;
-    exports com.example.tarea2;
+    opens view to javafx.fxml;
+    exports view;
 }
